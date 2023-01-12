@@ -1,10 +1,8 @@
 package src;
 
-import javax.swing.JFrame;
+import javax.swing.*;
 
-import java.awt.Color;
-
-import javax.swing.ImageIcon;
+import java.awt.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -27,8 +25,21 @@ public class Main {
 
          */
 
-        MyFrame myFrame = new MyFrame();
+        ImageIcon image = new ImageIcon("image.png");
 
+        JLabel label = new JLabel();
+        label.setText("Garble Game");
+        label.setIcon(image);
+        label.setHorizontalTextPosition(JLabel.CENTER);
+        label.setVerticalTextPosition(JLabel.TOP);
+        label.setForeground(new Color(0x00F0));
+        label.setFont(new Font("MV Boli", Font.PLAIN,20));
+
+        JFrame frame = new JFrame();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(600,600);
+        frame.setVisible(true);
+        frame.add(label);
 
     }
 }
