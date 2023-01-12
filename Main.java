@@ -19,5 +19,7 @@ public class Main {
         frame.setIconImage(image.getImage());
 
         frame.getContentPane().setBackground(new Color(30,30,30));
+
+        //test
     }
 }
