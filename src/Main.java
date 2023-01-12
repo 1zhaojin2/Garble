@@ -1,3 +1,5 @@
+package src;
+
 import javax.swing.JFrame;
 
 import java.awt.Color;
@@ -7,6 +9,7 @@ import javax.swing.ImageIcon;
 public class Main {
     public static void main(String[] args) {
 
+        /*
         JFrame frame = new JFrame();
         frame.setTitle("Garble");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -21,5 +24,11 @@ public class Main {
         frame.getContentPane().setBackground(new Color(30,30,30));
 
         //test
+
+         */
+
+        MyFrame myFrame = new MyFrame();
+
+
     }
 }
